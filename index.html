@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>MyAppSlideshow</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body onload="startGame()">
+  
+	<div style="text-align: center;">
+
+		<h2>Travis Scott Gang Gang</h2>
+		<p>Click on the images below bro</p>
+	</div>
+
+
+
+<div class="row">
+  <div class="column">
+    <img src="images/travis1.jpg" alt="Ballin" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/travis2.jpg" alt="Flex" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/travis3.jpg" alt="AstroWorld" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/travis4.jpg" alt="Gang" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+
+
+
+
+
+
+
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+<h2>Modal Login Form</h2>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" >Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="images/TravisScott.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container2">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container2" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">About</a>
+    <a href="#">Gallery</a>
+    <a href="#">Shop</a>
+    <a href="#">Skits Stuff</a>
+  </div>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<!-- This Code down here is a game -->
+<!-- <br>
+<button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">Tap To Play</button>
+<h2>This is Rahuls Game</h2>
+<p>Refresh page to restart</p> -->
+
+
+<script src="js/script.js"></script>
+
+
+  </body>
+</html>
